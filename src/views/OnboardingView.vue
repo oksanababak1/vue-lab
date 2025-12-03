@@ -49,3 +49,13 @@ const nextSlide = () => {
     />
   </div>
 </template>
+<template>
+  <div @click="nextSlide" class="cursor-pointer">
+    <OnboardingCard
+      :title="slides[currentSlide].title"
+      :description="slides[currentSlide].description"
+      :illustration="slides[currentSlide].illustration"
+      :bgColor="slides[currentSlide].bgColor"
+    />
+  </div>
+</template>
